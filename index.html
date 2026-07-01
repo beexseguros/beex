@@ -13,6 +13,10 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -40,26 +44,28 @@
 
     <div class="container hero-content">
 
-        <h1>
-            Encontre o seguro ideal pagando o valor justo.
-        </h1>
+        <div class="hero-text-box">
+            <h1>
+                Encontre o seguro ideal pagando o valor justo.
+            </h1>
 
-        <p>
-            Compare as principais seguradoras com atendimento especializado da BEEX.
-        </p>
+            <p>
+                Compare as principais seguradoras com atendimento especializado da BEEX.
+            </p>
 
-        <ul class="hero-features">
-            <li><i class="fa-solid fa-car"></i>Seguro Auto</li>
-            <li><i class="fa-solid fa-heart"></i>Vida</li>
-            <li><i class="fa-solid fa-building"></i>Empresarial</li>
-            <li><i class="fa-solid fa-house"></i>Residencial</li>
-            <li><i class="fa-solid fa-chart-pie"></i>Consórcio</li>
-            <li><i class="fa-solid fa-hand-holding-dollar"></i>Crédito</li>
-        </ul>
+            <ul class="hero-features">
+                <li><i class="fa-solid fa-car"></i>Seguro Auto</li>
+                <li><i class="fa-solid fa-heart"></i>Vida</li>
+                <li><i class="fa-solid fa-building"></i>Empresarial</li>
+                <li><i class="fa-solid fa-house"></i>Residencial</li>
+                <li><i class="fa-solid fa-chart-pie"></i>Consórcio</li>
+                <li><i class="fa-solid fa-hand-holding-dollar"></i>Crédito</li>
+            </ul>
+        </div>
 
         <div class="hero-buttons">
-            <a href="https://wa.me/5541995106928?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o." target="_blank" class="btn-primary">
-                <i class="fa-brands fa-whatsapp"></i> Solicitar Cotação
+            <a href="#contato" class="btn-primary">
+                Solicitar Cotação
             </a>
             <a href="#seguros" class="btn-secondary">
                 Conhecer os Seguros
@@ -189,26 +195,12 @@
 
 <section id="contato" class="contato">
     <div class="container">
-        <h2>Fale Conosco e Peça sua Cotação</h2>
-        <form id="formulario">
-            <input type="text" placeholder="Nome" required>
-            <input type="tel" placeholder="Telefone / WhatsApp" required>
-            <select required>
-                <option value="" disabled selected>Qual tipo de seguro você precisa?</option>
-                <option value="auto">Seguro Auto</option>
-                <option value="vida">Seguro de Vida</option>
-                <option value="residencial">Seguro Residencial</option>
-                <option value="empresarial">Seguro Empresarial</option>
-                <option value="consorcio">Consórcio</option>
-                <option value="credito">Crédito</option>
-                <option value="outro">Outro</option>
-            </select>
-            <textarea placeholder="Mensagem (opcional)"></textarea>
-            <button type="submit">Enviar Solicitação</button>
-            <p class="form-consent">
-                Ao enviar este formulário, você concorda com nossa <a href="politica-de-privacidade.html" target="_blank">Política de Privacidade</a> e autoriza a BEEX Corretora de Seguros a entrar em contato para fins de atendimento e cotação.
-            </p>
-        </form>
+        <h2>Solicite uma Cotação</h2>
+        <!-- Início da alteração: adicione a div e o iframe abaixo -->
+        <div class="google-form-container">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf2IR920NWAYT9jWeAmYp6YTULOWCuJrmivqr4WF6nl_VBkDA/viewform?embedded=true" width="640" height="1195" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+        </div>
+        <!-- Fim da alteração -->
     </div>
 </section>
 
