@@ -65,7 +65,7 @@ nav a:hover {
 }
 
 .hero{
-background: linear-gradient(135deg, var(--cor-primaria), #56008B);
+background: linear-gradient(135deg, #8e2de2, #4a00e0); /* Gradiente roxo moderno e vibrante */
 padding: 80px 0;
 position: relative;
 }
@@ -257,20 +257,6 @@ transition: all 0.3s ease;
 .card:hover {
     transform: translateY(-8px);
     box-shadow: var(--sombra-media);
-}
-
-.card .btn-secondary {
-    border-color: var(--cor-primaria);
-    color: var(--cor-primaria);
-    background-color: transparent;
-    padding: 12px 20px;
-    font-size: 0.9rem;
-    justify-content: center;
-}
-
-.card .btn-secondary:hover {
-    background-color: var(--cor-primaria);
-    color: var(--cor-branca);
 }
 
 .card i{
@@ -726,19 +712,24 @@ font-size:2.5rem;
 }
 
 /* Estilos para o container do Google Form */
+/* Versão Melhorada: Mais moderna e integrada ao design */
 .google-form-container {
-    position: relative;
-    width: 100%;
-    padding-top: 120%; /* Proporção para a altura do formulário */
-    margin: 20px auto 0;
+    margin: 40px auto 0;
     max-width: 640px; /* Largura máxima do formulário */
+    background-color: var(--cor-fundo-secao); /* Fundo sutil para o carregamento */
+    border-radius: 15px; /* Consistente com outros cards */
+    box-shadow: var(--sombra-media); /* Sombra mais destacada e profissional */
+    overflow: hidden; /* Garante que o iframe respeite o border-radius */
+    transition: all 0.3s ease;
 }
+
+.google-form-container:hover {
+    transform: translateY(-5px);
+}
+
 .google-form-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: block; /* Remove espaços indesejados */
     width: 100%;
-    height: 100%;
-    border: 1px solid #ddd;
-    border-radius: 10px;
+    aspect-ratio: 1 / 1.5; /* Proporção moderna (largura / altura). Ajuste se necessário */
+    border: none; /* Remove a borda, a sombra já faz o trabalho */
 }
